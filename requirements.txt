@@ -1,0 +1,61 @@
+# --- Frontend ---
+streamlit==1.38.0
+
+# --- LLM / RAG ---
+# 0.2.x hard-pins numpy<2.0.0 on Python 3.12+, which conflicts with the
+# numpy floor below (no numpy<2 wheel exists for Python 3.13). 0.3.x lifts
+# that restriction; our imports (langchain_core, langchain_community,
+# langchain_groq, langchain_huggingface, langchain_text_splitters) are all
+# stable across this bump.
+langchain>=0.3.0
+langchain-community>=0.3.0
+langchain-groq>=0.2.0
+langchain-huggingface>=0.1.0
+langchain-text-splitters>=0.3.0
+faiss-cpu>=1.9.0
+sentence-transformers>=3.0.1
+groq>=0.11.0
+pypdf==4.3.1
+
+# --- Mock API (optional standalone service) ---
+fastapi==0.112.2
+uvicorn==0.30.6
+
+# --- Machine Learning ---
+# Exact versions above pinned to mid-2024 releases have no prebuilt wheels
+# for Python 3.13 (or newer), forcing pip to build from source, which needs
+# a C/C++ compiler most machines don't have. These are left as open floors
+# so pip picks the newest compatible release with a ready-made wheel.
+xgboost>=2.1.1
+scikit-learn>=1.5.1
+pandas>=2.2.2
+numpy>=2.1.0,<3.0.0
+joblib>=1.4.2
+
+# --- OCR ---
+paddleocr>=2.9.0
+paddlepaddle>=3.0.0
+opencv-python-headless>=4.10.0
+Pillow>=10.4.0
+
+# --- Database ---
+SQLAlchemy==2.0.32
+
+# --- Visualization ---
+plotly==5.23.0
+
+# --- PDF Report Generation ---
+reportlab==4.2.2
+
+# --- Utilities ---
+python-dotenv==1.0.1
+pydantic>=2.8.2
+
+# --- Multilingual Voice AI (NEW) ---
+langdetect==1.0.9
+faster-whisper>=1.0.3
+gTTS==2.5.3
+# openai-whisper==20231117  # optional fallback STT engine — only needed if
+# faster-whisper (above) fails to install; pulls in numba/llvmlite, which can
+# be slow to support brand-new Python releases. Uncomment and
+# `pip install openai-whisper` separately later if you want the fallback.

@@ -1,0 +1,149 @@
+2026-09-02 12:27:02 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-02 12:28:10 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-02 12:28:29 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-02 12:29:53 | INFO     | src.rag.vectorstore | Building FAISS index from bank policy PDF...
+2026-09-02 12:29:54 | INFO     | src.rag.loader | Loaded 2 pages -> 7 chunks from C:\Users\rajki\OneDrive\Desktop\Projects\loan_guard_enterprise_ai\data\bank_policy.pdf
+2026-09-02 12:29:55 | INFO     | src.rag.vectorstore | FAISS index built and saved to data\faiss_index
+2026-09-02 12:31:07 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-02 12:31:18 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-02 12:38:47 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-02 12:39:43 | INFO     | src.utils.language | Language detected via langdetect: en
+2026-09-02 12:39:53 | INFO     | src.rag.vectorstore | Loading cached FAISS index from data\faiss_index
+2026-09-02 12:41:50 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-02 12:42:57 | INFO     | src.utils.language | Language detected via langdetect: en
+2026-09-02 12:43:07 | INFO     | src.rag.vectorstore | Loading cached FAISS index from data\faiss_index
+2026-09-02 12:47:36 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-02 12:48:52 | INFO     | src.utils.language | Language detected via langdetect: en
+2026-09-02 12:49:02 | INFO     | src.rag.vectorstore | Loading cached FAISS index from data\faiss_index
+2026-09-02 12:49:03 | INFO     | src.rag.multilingual_chat | Multilingual RAG answer grounded=True lang=en
+2026-09-02 12:49:04 | INFO     | src.voice.tts | Synthesized 57 chars of speech in lang=en
+2026-09-02 12:50:40 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-02 12:50:52 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-02 12:51:25 | INFO     | src.voice.tts | Synthesized 228 chars of speech in lang=te
+2026-09-02 12:52:01 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-02 12:52:05 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-02 12:52:20 | INFO     | src.voice.tts | Synthesized 233 chars of speech in lang=ta
+2026-09-02 12:58:02 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-02 13:00:37 | INFO     | src.voice.stt | faster-whisper model loaded (size=small).
+2026-09-02 13:00:37 | WARNING  | src.voice.stt | Transcription failed ([Errno 13] Permission denied: 'C:\\Users\\rajki\\AppData\\Local\\Temp\\tmp1lrt0f99.wav').
+2026-09-02 13:01:08 | WARNING  | src.voice.stt | Transcription failed ([Errno 13] Permission denied: 'C:\\Users\\rajki\\AppData\\Local\\Temp\\tmpv926ecsh.wav').
+2026-09-02 13:01:30 | WARNING  | src.voice.stt | Transcription failed ([Errno 13] Permission denied: 'C:\\Users\\rajki\\AppData\\Local\\Temp\\tmpn20ztes8.wav').
+2026-09-02 13:02:12 | WARNING  | src.voice.stt | Transcription failed ([Errno 13] Permission denied: 'C:\\Users\\rajki\\AppData\\Local\\Temp\\tmp3rqc2gpl.wav').
+2026-09-02 13:02:41 | WARNING  | src.voice.stt | Transcription failed ([Errno 13] Permission denied: 'C:\\Users\\rajki\\AppData\\Local\\Temp\\tmp9u0zlkm4.wav').
+2026-09-02 13:02:48 | WARNING  | src.voice.stt | Transcription failed ([Errno 13] Permission denied: 'C:\\Users\\rajki\\AppData\\Local\\Temp\\tmp_yg8cmu9.wav').
+2026-09-02 13:03:08 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-02 13:03:11 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-02 13:03:26 | WARNING  | src.voice.stt | Transcription failed ([Errno 13] Permission denied: 'C:\\Users\\rajki\\AppData\\Local\\Temp\\tmpxcuqxr0z.wav').
+2026-09-02 13:08:31 | INFO     | src.api.cibil_api | Mock CIBIL report generated for PAN=EFTRG3678Y: score=552
+2026-09-02 13:08:47 | INFO     | src.api.cibil_api | Mock CIBIL report generated for PAN=EFTRG3678Y: score=552
+2026-09-02 13:09:46 | INFO     | __main__ | Loading dataset from C:\Users\rajki\OneDrive\Desktop\Projects\loan_guard_enterprise_ai\data\loan_dataset.csv
+2026-09-02 13:09:49 | INFO     | __main__ | Model trained and saved to C:\Users\rajki\OneDrive\Desktop\Projects\loan_guard_enterprise_ai\src\ml\artifacts\xgb_risk_model.joblib
+2026-09-02 13:09:49 | INFO     | __main__ | Metrics: {'roc_auc': 0.9246, 'precision': 0.7787, 'recall': 0.7725, 'f1_score': 0.7756, 'confusion_matrix': [[489, 56], [58, 197]], 'n_train': 3200, 'n_test': 800}
+2026-09-02 13:10:59 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-02 13:13:05 | INFO     | src.api.cibil_api | Mock CIBIL report generated for PAN=ABCDE1234F: score=621
+2026-09-02 13:13:07 | INFO     | src.ml.model | Loaded risk model from C:\Users\rajki\OneDrive\Desktop\Projects\loan_guard_enterprise_ai\src\ml\artifacts\xgb_risk_model.joblib
+2026-09-02 13:13:07 | INFO     | src.ml.model | Risk prediction: probability=0.7672 category=High
+2026-09-02 13:13:07 | INFO     | src.decision.rule_engine | Decision: Rejected (hard reject) reasons=['CIBIL score (621) is below the minimum threshold of 650.', 'ML model classifies this applicant as High default risk.']
+2026-09-02 13:13:07 | INFO     | src.database.db | Saved application id=1 decision=Rejected
+2026-09-02 13:13:11 | INFO     | src.voice.tts | Synthesized 136 chars of speech in lang=en
+2026-09-02 13:13:55 | INFO     | src.api.cibil_api | Mock CIBIL report generated for PAN=ABCDE1234F: score=569
+2026-09-02 13:13:55 | INFO     | src.ml.model | Risk prediction: probability=0.7803 category=High
+2026-09-02 13:13:55 | INFO     | src.decision.rule_engine | Decision: Rejected (hard reject) reasons=['CIBIL score (569) is below the minimum threshold of 650.', 'ML model classifies this applicant as High default risk.']
+2026-09-02 13:13:55 | INFO     | src.database.db | Saved application id=2 decision=Rejected
+2026-09-02 13:14:00 | INFO     | src.voice.tts | Synthesized 136 chars of speech in lang=en
+2026-09-02 13:14:14 | INFO     | src.api.cibil_api | Mock CIBIL report generated for PAN=ABCDE1234F: score=569
+2026-09-02 13:14:14 | INFO     | src.ml.model | Risk prediction: probability=0.5983 category=High
+2026-09-02 13:14:14 | INFO     | src.decision.rule_engine | Decision: Rejected (hard reject) reasons=['CIBIL score (569) is below the minimum threshold of 650.', 'ML model classifies this applicant as High default risk.']
+2026-09-02 13:14:14 | INFO     | src.database.db | Saved application id=3 decision=Rejected
+2026-09-02 13:14:18 | INFO     | src.voice.tts | Synthesized 136 chars of speech in lang=en
+2026-09-02 13:14:28 | INFO     | src.api.cibil_api | Mock CIBIL report generated for PAN=ABCDE1234F: score=569
+2026-09-02 13:14:28 | INFO     | src.ml.model | Risk prediction: probability=0.5983 category=High
+2026-09-02 13:14:28 | INFO     | src.decision.rule_engine | Decision: Rejected (hard reject) reasons=['CIBIL score (569) is below the minimum threshold of 650.', 'ML model classifies this applicant as High default risk.']
+2026-09-02 13:14:28 | INFO     | src.database.db | Saved application id=4 decision=Rejected
+2026-09-02 13:14:32 | INFO     | src.voice.tts | Synthesized 136 chars of speech in lang=en
+2026-09-02 13:16:16 | INFO     | src.api.cibil_api | Mock CIBIL report generated for PAN=ABCDE1234F: score=569
+2026-09-02 13:16:16 | INFO     | src.ml.model | Risk prediction: probability=0.5983 category=High
+2026-09-02 13:16:16 | INFO     | src.decision.rule_engine | Decision: Rejected (hard reject) reasons=['CIBIL score (569) is below the minimum threshold of 650.', 'ML model classifies this applicant as High default risk.']
+2026-09-02 13:16:16 | INFO     | src.database.db | Saved application id=5 decision=Rejected
+2026-09-02 13:16:19 | INFO     | src.voice.tts | Synthesized 136 chars of speech in lang=en
+2026-09-02 13:16:30 | INFO     | src.api.cibil_api | Mock CIBIL report generated for PAN=ABCDE1234F: score=569
+2026-09-02 13:16:30 | INFO     | src.ml.model | Risk prediction: probability=0.5983 category=High
+2026-09-02 13:16:30 | INFO     | src.decision.rule_engine | Decision: Rejected (hard reject) reasons=['CIBIL score (569) is below the minimum threshold of 650.', 'ML model classifies this applicant as High default risk.']
+2026-09-02 13:16:30 | INFO     | src.database.db | Saved application id=6 decision=Rejected
+2026-09-02 13:16:32 | INFO     | src.api.cibil_api | Mock CIBIL report generated for PAN=ABCDE1234F: score=569
+2026-09-02 13:16:32 | INFO     | src.ml.model | Risk prediction: probability=0.5983 category=High
+2026-09-02 13:16:32 | INFO     | src.decision.rule_engine | Decision: Rejected (hard reject) reasons=['CIBIL score (569) is below the minimum threshold of 650.', 'ML model classifies this applicant as High default risk.']
+2026-09-02 13:16:32 | INFO     | src.database.db | Saved application id=7 decision=Rejected
+2026-09-02 13:16:33 | INFO     | src.voice.tts | Synthesized 136 chars of speech in lang=en
+2026-09-02 13:16:37 | INFO     | src.api.cibil_api | Mock CIBIL report generated for PAN=ABCDE1234F: score=569
+2026-09-02 13:16:37 | INFO     | src.ml.model | Risk prediction: probability=0.5983 category=High
+2026-09-02 13:16:37 | INFO     | src.decision.rule_engine | Decision: Rejected (hard reject) reasons=['CIBIL score (569) is below the minimum threshold of 650.', 'ML model classifies this applicant as High default risk.']
+2026-09-02 13:16:37 | INFO     | src.database.db | Saved application id=8 decision=Rejected
+2026-09-02 13:16:37 | INFO     | src.voice.tts | Synthesized 136 chars of speech in lang=en
+2026-09-02 13:16:40 | INFO     | src.voice.tts | Synthesized 136 chars of speech in lang=en
+2026-09-02 13:24:26 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-02 13:25:08 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-02 13:25:13 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-02 13:25:15 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-02 13:25:24 | INFO     | src.voice.tts | Synthesized 214 chars of speech in lang=en
+2026-09-02 13:25:32 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-02 13:25:35 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-02 13:25:46 | INFO     | src.voice.tts | Synthesized 228 chars of speech in lang=te
+2026-09-02 13:28:18 | INFO     | src.api.cibil_api | Mock CIBIL report generated for PAN=ABCDE1234F: score=621
+2026-09-02 13:28:20 | INFO     | src.ml.model | Loaded risk model from C:\Users\rajki\OneDrive\Desktop\Projects\loan_guard_enterprise_ai\src\ml\artifacts\xgb_risk_model.joblib
+2026-09-02 13:28:20 | INFO     | src.ml.model | Risk prediction: probability=0.6341 category=High
+2026-09-02 13:28:20 | INFO     | src.decision.rule_engine | Decision: Rejected (hard reject) reasons=['ML model classifies this applicant as High default risk.']
+2026-09-02 13:28:20 | INFO     | src.database.db | Saved application id=9 decision=Rejected
+2026-09-02 13:28:26 | INFO     | src.voice.tts | Synthesized 270 chars of speech in lang=te
+2026-09-02 13:28:53 | INFO     | src.api.cibil_api | Mock CIBIL report generated for PAN=ABCDE1234F: score=896
+2026-09-02 13:28:53 | INFO     | src.ml.model | Risk prediction: probability=0.4328 category=High
+2026-09-02 13:28:53 | INFO     | src.decision.rule_engine | Decision: Rejected (hard reject) reasons=['ML model classifies this applicant as High default risk.']
+2026-09-02 13:28:53 | INFO     | src.database.db | Saved application id=10 decision=Rejected
+2026-09-02 13:28:55 | INFO     | src.api.cibil_api | Mock CIBIL report generated for PAN=ABCDE1234F: score=896
+2026-09-02 13:28:55 | INFO     | src.ml.model | Risk prediction: probability=0.4328 category=High
+2026-09-02 13:28:55 | INFO     | src.decision.rule_engine | Decision: Rejected (hard reject) reasons=['ML model classifies this applicant as High default risk.']
+2026-09-02 13:28:55 | INFO     | src.database.db | Saved application id=11 decision=Rejected
+2026-09-02 13:29:00 | INFO     | src.voice.tts | Synthesized 266 chars of speech in lang=te
+2026-09-02 13:29:01 | INFO     | src.voice.tts | Synthesized 266 chars of speech in lang=te
+2026-09-02 13:30:49 | INFO     | src.api.cibil_api | Mock CIBIL report generated for PAN=ABCDE1234F: score=896
+2026-09-02 13:30:49 | INFO     | src.ml.model | Risk prediction: probability=0.4217 category=High
+2026-09-02 13:30:49 | INFO     | src.decision.rule_engine | Decision: Rejected (hard reject) reasons=['ML model classifies this applicant as High default risk.']
+2026-09-02 13:30:49 | INFO     | src.database.db | Saved application id=12 decision=Rejected
+2026-09-02 13:30:55 | INFO     | src.voice.tts | Synthesized 266 chars of speech in lang=te
+2026-09-02 13:31:07 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-02 13:31:10 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-02 13:34:16 | INFO     | src.api.cibil_api | Mock CIBIL report generated for PAN=RTKPM4821Q: score=770
+2026-09-02 13:34:16 | INFO     | src.ml.model | Risk prediction: probability=0.1781 category=Medium
+2026-09-02 13:34:16 | INFO     | src.decision.rule_engine | Decision: Approved via Rule 2 — Standard, loan=1200000.00 rate=0.110
+2026-09-02 13:34:16 | INFO     | src.database.db | Saved application id=13 decision=Approved
+2026-09-02 13:34:18 | INFO     | src.api.cibil_api | Mock CIBIL report generated for PAN=RTKPM4821Q: score=770
+2026-09-02 13:34:18 | INFO     | src.ml.model | Risk prediction: probability=0.1781 category=Medium
+2026-09-02 13:34:18 | INFO     | src.decision.rule_engine | Decision: Approved via Rule 2 — Standard, loan=1200000.00 rate=0.110
+2026-09-02 13:34:18 | INFO     | src.database.db | Saved application id=14 decision=Approved
+2026-09-02 13:34:19 | INFO     | src.voice.tts | Synthesized 124 chars of speech in lang=en
+2026-09-02 13:34:21 | INFO     | src.voice.tts | Synthesized 124 chars of speech in lang=en
+2026-09-02 14:41:31 | INFO     | src.api.cibil_api | Mock CIBIL report generated for PAN=RTKPM4821Q: score=821
+2026-09-02 14:41:31 | INFO     | src.ml.model | Risk prediction: probability=0.3842 category=Medium
+2026-09-02 14:41:31 | INFO     | src.decision.rule_engine | Decision: Rejected (hard reject) reasons=['CIBIL score (550) is below the minimum threshold of 650.']
+2026-09-02 14:41:31 | INFO     | src.database.db | Saved application id=15 decision=Rejected
+2026-09-02 14:41:31 | WARNING  | src.voice.tts | gTTS synthesis failed (Failed to connect. Probable cause: Unknown) — audio playback skipped.
+2026-09-02 14:41:50 | INFO     | src.api.cibil_api | Mock CIBIL report generated for PAN=RTKPM4821Q: score=821
+2026-09-02 14:41:50 | INFO     | src.ml.model | Risk prediction: probability=0.0782 category=Low
+2026-09-02 14:41:50 | INFO     | src.decision.rule_engine | Decision: Approved via Rule 1 — Prime, loan=1500000.00 rate=0.095
+2026-09-02 14:41:50 | INFO     | src.database.db | Saved application id=16 decision=Approved
+2026-09-02 14:41:50 | WARNING  | src.voice.tts | gTTS synthesis failed (Failed to connect. Probable cause: Unknown) — audio playback skipped.
+2026-09-02 14:42:26 | INFO     | src.utils.language | Language detection inconclusive for 'loan kattadanki minimum age entha undali?' — defaulting to en
+2026-09-02 14:42:59 | INFO     | src.utils.language | Language detection inconclusive for 'loan kattadanki minimum age entha undali? in telugu' — defaulting to en
+2026-09-02 14:43:08 | INFO     | src.rag.vectorstore | Loading cached FAISS index from data\faiss_index
+2026-09-02 14:43:10 | INFO     | src.rag.multilingual_chat | Multilingual RAG answer grounded=True lang=en
+2026-09-02 14:43:10 | INFO     | src.voice.tts | Synthesized 54 chars of speech in lang=en
+2026-09-02 14:44:14 | INFO     | src.utils.language | Language detected via script range: te
+2026-09-02 14:44:16 | INFO     | src.rag.multilingual_chat | Multilingual RAG answer grounded=True lang=te
+2026-09-02 14:44:16 | INFO     | src.voice.tts | Synthesized 3 chars of speech in lang=te
+2026-09-02 14:45:16 | INFO     | src.utils.language | Language detected via script range: te
+2026-09-02 14:45:20 | INFO     | src.rag.multilingual_chat | Multilingual RAG answer grounded=True lang=te
+2026-09-02 14:45:51 | INFO     | src.voice.tts | Synthesized 2095 chars of speech in lang=te
+2026-09-02 14:47:18 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-02 14:47:31 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-02 14:47:50 | INFO     | src.voice.tts | Synthesized 214 chars of speech in lang=en
+2026-09-02 14:48:04 | INFO     | src.voice.tts | Synthesized 214 chars of speech in lang=en

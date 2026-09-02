@@ -1,0 +1,12 @@
+{
+  "features": [
+    "cibil_score",
+    "annual_income",
+    "employment_years",
+    "loan_amount",
+    "loan_term_months",
+    "residential_assets",
+    "commercial_assets",
+    "existing_liabilities"
+  ]
+}
