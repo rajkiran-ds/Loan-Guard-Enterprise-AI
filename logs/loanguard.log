@@ -147,3 +147,46 @@
 2026-09-02 14:47:31 | INFO     | src.database.db | Database initialized at data\loanguard.db
 2026-09-02 14:47:50 | INFO     | src.voice.tts | Synthesized 214 chars of speech in lang=en
 2026-09-02 14:48:04 | INFO     | src.voice.tts | Synthesized 214 chars of speech in lang=en
+2026-09-02 22:04:53 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-02 22:07:04 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-02 22:08:34 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-02 22:10:31 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-02 22:11:32 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-02 22:13:00 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-02 22:13:05 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-02 22:13:19 | INFO     | src.voice.tts | Synthesized 228 chars of speech in lang=te
+2026-09-02 22:17:58 | INFO     | src.api.cibil_api | Mock CIBIL report generated for PAN=ZXQPK4821M: score=322
+2026-09-02 22:18:01 | INFO     | src.ml.model | Loaded risk model from C:\Users\rajki\OneDrive\Desktop\Projects\loan_guard_enterprise_ai\src\ml\artifacts\xgb_risk_model.joblib
+2026-09-02 22:18:01 | INFO     | src.ml.model | Risk prediction: probability=0.2176 category=Medium
+2026-09-02 22:18:01 | INFO     | src.decision.rule_engine | Decision: Approved via Rule 2 — Standard, loan=960000.00 rate=0.110
+2026-09-02 22:18:01 | INFO     | src.database.db | Saved application id=17 decision=Approved
+2026-09-02 22:18:15 | INFO     | src.voice.tts | Synthesized 414 chars of speech in lang=te
+2026-09-02 22:18:20 | INFO     | src.api.cibil_api | Mock CIBIL report generated for PAN=ZXQPK4821M: score=322
+2026-09-02 22:18:20 | INFO     | src.ml.model | Risk prediction: probability=0.1801 category=Medium
+2026-09-02 22:18:20 | INFO     | src.decision.rule_engine | Decision: Approved via Rule 2 — Standard, loan=960000.00 rate=0.110
+2026-09-02 22:18:20 | INFO     | src.database.db | Saved application id=18 decision=Approved
+2026-09-02 22:18:26 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-02 22:18:29 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-02 22:18:35 | INFO     | src.voice.tts | Synthesized 377 chars of speech in lang=te
+2026-09-02 22:19:34 | INFO     | src.api.cibil_api | Mock CIBIL report generated for PAN=ZXQPK4821M: score=507
+2026-09-02 22:19:34 | INFO     | src.ml.model | Risk prediction: probability=0.2176 category=Medium
+2026-09-02 22:19:34 | INFO     | src.decision.rule_engine | Decision: Approved via Rule 2 — Standard, loan=960000.00 rate=0.110
+2026-09-02 22:19:34 | INFO     | src.database.db | Saved application id=19 decision=Approved
+2026-09-02 22:19:36 | INFO     | src.voice.tts | Synthesized 124 chars of speech in lang=en
+2026-09-02 22:19:46 | INFO     | src.api.cibil_api | Mock CIBIL report generated for PAN=ZXQPK4821M: score=507
+2026-09-02 22:19:46 | INFO     | src.ml.model | Risk prediction: probability=0.1801 category=Medium
+2026-09-02 22:19:46 | INFO     | src.decision.rule_engine | Decision: Approved via Rule 2 — Standard, loan=960000.00 rate=0.110
+2026-09-02 22:19:46 | INFO     | src.database.db | Saved application id=20 decision=Approved
+2026-09-02 22:19:49 | INFO     | src.voice.tts | Synthesized 124 chars of speech in lang=en
+2026-09-02 22:21:45 | INFO     | src.rag.vectorstore | Loading cached FAISS index from data\faiss_index
+2026-09-02 22:21:47 | INFO     | src.rag.multilingual_chat | Multilingual RAG answer grounded=True lang=en
+2026-09-02 22:21:48 | INFO     | src.voice.tts | Synthesized 68 chars of speech in lang=en
+2026-09-02 22:23:11 | INFO     | src.rag.multilingual_chat | Multilingual RAG answer grounded=True lang=en
+2026-09-02 22:23:21 | INFO     | src.voice.tts | Synthesized 619 chars of speech in lang=en
+2026-09-02 22:24:41 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-02 22:25:35 | INFO     | src.rag.multilingual_chat | Multilingual RAG answer grounded=True lang=en
+2026-09-02 22:25:36 | INFO     | src.voice.tts | Synthesized 40 chars of speech in lang=en
+2026-09-02 22:26:02 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-02 22:26:05 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-02 22:26:19 | INFO     | src.rag.multilingual_chat | Multilingual RAG answer grounded=True lang=ta
+2026-09-02 22:26:19 | INFO     | src.voice.tts | Synthesized 38 chars of speech in lang=ta

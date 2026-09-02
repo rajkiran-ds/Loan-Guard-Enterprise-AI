@@ -2,7 +2,7 @@
 
 **An Intelligent Personal Loan Origination System using RAG, LLMs, OCR, APIs, Machine Learning, and Explainable AI.**
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue) ![Streamlit](https://img.shields.io/badge/Streamlit-1.38-FF4B4B) ![XGBoost](https://img.shields.io/badge/XGBoost-2.1-brightgreen) ![License](https://img.shields.io/badge/License-MIT-lightgrey)
+![Python](https://img.shields.io/badge/Python-3.10+-blue) ![Streamlit](https://img.shields.io/badge/Streamlit-1.38-FF4B4B) ![XGBoost](https://img.shields.io/badge/XGBoost-2.1-brightgreen)
 
 ---
 
@@ -289,11 +289,5 @@ git push -u origin main
 - Multi-document RAG (add loan agreement templates, FAQ docs)
 - Async document verification queue for high application volume
 
-## Screenshots
-
-_Add screenshots of Home, Apply for Loan, AI Assistant, Risk Dashboard, and
-Approval Report here before publishing._
-
-## License
-
-MIT
+**Author:** Pendyala Raj kiran Reddy
+[LinkedIn](linkedin.com/in/raj-kiran-reddy-b248173a6) · [GitHub](https://github.com/rajkiran-ds)
