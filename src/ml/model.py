@@ -1,12 +1,16 @@
 """
 src/ml/model.py
 ------------------
-Inference-only wrapper around the trained XGBoost model. This is what the
-decision pipeline (src/decision/rule_engine.py) imports — it never touches
-XGBoost or joblib directly, only this class's `.predict()` method. That
-keeps the ML model MUT NOT approve loans directly boundary from FEATURE 6
-clean: this file only ever returns a probability + risk label, never a
-decision.
+Inference-only wrapper around the trained PyTorch MLP.
+
+This is what the decision pipeline (src/decision/rule_engine.py) imports —
+it never touches PyTorch or joblib directly, only this class's `.predict()`
+method. That keeps the ML model boundary from FEATURE 6 clean: this file
+only ever returns a probability + risk label, never a decision.
+
+The MLP was trained on standardised features, so inference MUST apply the
+same StandardScaler fit during training. Both the model weights and the
+scaler are saved by src/ml/train_model.py and loaded lazily here.
 """
 
 from __future__ import annotations
@@ -14,14 +18,16 @@ from __future__ import annotations
 from dataclasses import dataclass
 
 import joblib
-import pandas as pd
+import numpy as np
 
 from config import (
     ML_FEATURE_COLUMNS,
-    MODEL_PATH,
+    MLP_MODEL_PATH,
+    MLP_SCALER_PATH,
     RISK_LOW_MAX_DEFAULT_PROB,
     RISK_MEDIUM_MAX_DEFAULT_PROB,
 )
+from src.ml.mlp import load_mlp, predict_mlp
 from src.utils.logger import get_logger
 
 logger = get_logger(__name__)
@@ -46,26 +52,53 @@ class RiskModel:
     reload the model from disk on every interaction."""
 
     _model = None
+    _scaler = None
 
     @classmethod
     def _load(cls):
         if cls._model is None:
-            if not MODEL_PATH.exists():
+            if not MLP_MODEL_PATH.exists():
                 raise FileNotFoundError(
-                    f"No trained model found at {MODEL_PATH}. "
+                    f"No trained MLP found at {MLP_MODEL_PATH}. "
                     f"Run `python -m src.ml.train_model` first."
                 )
-            cls._model = joblib.load(MODEL_PATH)
-            logger.info("Loaded risk model from %s", MODEL_PATH)
-        return cls._model
+            if not MLP_SCALER_PATH.exists():
+                raise FileNotFoundError(
+                    f"No scaler found at {MLP_SCALER_PATH}. "
+                    f"Run `python -m src.ml.train_model` first."
+                )
+            cls._scaler = joblib.load(MLP_SCALER_PATH)
+            cls._model = load_mlp(
+                n_features=len(ML_FEATURE_COLUMNS),
+                path=str(MLP_MODEL_PATH),
+            )
+            logger.info("Loaded MLP + scaler from %s", MLP_MODEL_PATH.parent)
+        return cls._model, cls._scaler
 
     @classmethod
     def predict(cls, features: dict) -> RiskAssessment:
-        model = cls._load()
-        row = pd.DataFrame([{col: features[col] for col in ML_FEATURE_COLUMNS}])
-        default_probability = float(model.predict_proba(row)[0, 1])
-        risk_category = categorize_risk(default_probability)
-        logger.info(
-            "Risk prediction: probability=%.4f category=%s", default_probability, risk_category
+        model, scaler = cls._load()
+
+        # Build a single-row feature matrix in the exact order the model
+        # expects (config.ML_FEATURE_COLUMNS).
+        x = np.array(
+            [[float(features[col]) for col in ML_FEATURE_COLUMNS]],
+            dtype=np.float32,
         )
-        return RiskAssessment(default_probability=default_probability, risk_category=risk_category)
+
+        # Apply the SAME scaling used during training — critical for the
+        # MLP to produce the same predictions it produced on the val set.
+        x_scaled = scaler.transform(x).astype(np.float32)
+
+        default_probability = float(predict_mlp(model, x_scaled)[0])
+        risk_category = categorize_risk(default_probability)
+
+        logger.info(
+            "Risk prediction: probability=%.4f category=%s",
+            default_probability,
+            risk_category,
+        )
+        return RiskAssessment(
+            default_probability=default_probability,
+            risk_category=risk_category,
+        )

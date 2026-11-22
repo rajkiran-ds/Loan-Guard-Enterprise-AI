@@ -1,0 +1,7 @@
+model,auc_mean,auc_std,precision,recall,f1
+LogisticRegression,0.942,0.0073,0.8142,0.78,0.7963
+PyTorchMLP,0.9418,0.0074,0.8005,0.7981,0.7989
+TensorFlowMLP,0.9414,0.0071,0.799,0.795,0.7966
+GradientBoosting,0.9307,0.0094,0.8151,0.7149,0.7612
+XGBoost,0.9297,0.0078,0.7918,0.7439,0.7667
+RandomForest,0.9255,0.0081,0.8152,0.6952,0.7498

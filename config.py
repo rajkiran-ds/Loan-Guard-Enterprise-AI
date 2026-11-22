@@ -32,12 +32,18 @@ DATASET_PATH = DATA_DIR / "loan_dataset.csv"
 POLICY_PDF_PATH = DATA_DIR / "bank_policy.pdf"
 VECTORSTORE_PATH = Path(os.getenv("VECTORSTORE_PATH", str(DATA_DIR / "faiss_index")))
 DATABASE_PATH = Path(os.getenv("DATABASE_PATH", str(DATA_DIR / "loanguard.db")))
-MODEL_PATH = ARTIFACTS_DIR / "xgb_risk_model.joblib"
+# Primary production model — PyTorch MLP (trained by train_model.py)
+MODEL_PATH = ARTIFACTS_DIR / "mlp.pt"
+MLP_SCALER_PATH = ARTIFACTS_DIR / "mlp_scaler.joblib"
+
+# Legacy XGBoost path — kept so old imports don't break; the file may not exist
+XGB_MODEL_PATH = ARTIFACTS_DIR / "xgb_risk_model.joblib"
+
 MODEL_METRICS_PATH = ARTIFACTS_DIR / "metrics.json"
 FEATURE_SCHEMA_PATH = ARTIFACTS_DIR / "feature_schema.json"
-
-for _dir in (DATA_DIR, ASSETS_DIR, DOCS_DIR, ARTIFACTS_DIR, UPLOADS_DIR, REPORTS_DIR):
-    _dir.mkdir(parents=True, exist_ok=True)
+# Alias for the descriptive name used by train_model.py and model.py
+MLP_MODEL_PATH = MODEL_PATH
+MLP_SCALER_PATH = ARTIFACTS_DIR / "mlp_scaler.joblib"
 
 # ---------------------------------------------------------------------------
 # LLM / RAG configuration

@@ -59,3 +59,8 @@ gTTS==2.5.3
 # faster-whisper (above) fails to install; pulls in numba/llvmlite, which can
 # be slow to support brand-new Python releases. Uncomment and
 # `pip install openai-whisper` separately later if you want the fallback.
+
+# --- Experiment tracking + Deep Learning (for experimentation.py) ---
+mlflow>=2.16.0
+torch>=2.4.0
+tensorflow>=2.16.0

@@ -190,3 +190,69 @@
 2026-09-02 22:26:05 | INFO     | src.database.db | Database initialized at data\loanguard.db
 2026-09-02 22:26:19 | INFO     | src.rag.multilingual_chat | Multilingual RAG answer grounded=True lang=ta
 2026-09-02 22:26:19 | INFO     | src.voice.tts | Synthesized 38 chars of speech in lang=ta
+2026-09-03 23:02:51 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-03 23:20:06 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-03 23:21:27 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-03 23:21:35 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-03 23:22:09 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-03 23:24:18 | INFO     | src.utils.language | Language detected via langdetect: en
+2026-09-03 23:24:29 | INFO     | src.rag.vectorstore | Loading cached FAISS index from data\faiss_index
+2026-09-03 23:24:31 | INFO     | src.rag.multilingual_chat | Multilingual RAG answer grounded=True lang=en
+2026-09-03 23:24:32 | INFO     | src.voice.tts | Synthesized 44 chars of speech in lang=en
+2026-09-03 23:25:22 | INFO     | src.utils.language | Language detected via script range: te
+2026-09-03 23:25:24 | INFO     | src.rag.multilingual_chat | Multilingual RAG answer grounded=True lang=te
+2026-09-03 23:25:40 | INFO     | src.voice.tts | Synthesized 948 chars of speech in lang=te
+2026-09-03 23:26:15 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-03 23:26:21 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-03 23:26:34 | INFO     | src.voice.tts | Synthesized 238 chars of speech in lang=ta
+2026-09-03 23:28:17 | INFO     | src.api.cibil_api | Mock CIBIL report generated for PAN=QWERT1234Z: score=762
+2026-09-03 23:28:19 | INFO     | src.ml.model | Loaded risk model from C:\Users\rajki\OneDrive\Desktop\Projects\loan_guard_enterprise_ai\src\ml\artifacts\xgb_risk_model.joblib
+2026-09-03 23:28:19 | INFO     | src.ml.model | Risk prediction: probability=0.2176 category=Medium
+2026-09-03 23:28:19 | INFO     | src.decision.rule_engine | Decision: Approved via Rule 2 — Standard, loan=960000.00 rate=0.110
+2026-09-03 23:28:19 | INFO     | src.database.db | Saved application id=21 decision=Approved
+2026-09-03 23:28:32 | INFO     | src.voice.tts | Synthesized 431 chars of speech in lang=ta
+2026-09-04 12:20:53 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-04 12:25:10 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-04 12:25:27 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-04 12:25:38 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-04 12:28:14 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-09-04 12:33:08 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-10-12 18:48:39 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-10-12 18:50:05 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-10-12 18:50:15 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-11-22 20:25:29 | INFO     | __main__ | Loading dataset from C:\Users\rajki\OneDrive\Desktop\Projects\loan_guard_enterprise_ai\data\loan_dataset.csv
+2026-11-22 20:25:29 | INFO     | __main__ | Dataset: X=(4000, 8), y=(4000,), positive_rate=0.318
+2026-11-22 20:25:40 | INFO     | __main__ | Evaluating LogisticRegression ...
+2026-11-22 20:25:40 | INFO     | __main__ |   LogisticRegression   AUC=0.9420 ± 0.0073  P=0.8142  R=0.7800  F1=0.7963
+2026-11-22 20:25:40 | INFO     | __main__ | Evaluating RandomForest ...
+2026-11-22 20:25:42 | INFO     | __main__ |   RandomForest         AUC=0.9255 ± 0.0081  P=0.8152  R=0.6952  F1=0.7498
+2026-11-22 20:25:42 | INFO     | __main__ | Evaluating GradientBoosting ...
+2026-11-22 20:25:45 | INFO     | __main__ |   GradientBoosting     AUC=0.9307 ± 0.0094  P=0.8151  R=0.7149  F1=0.7612
+2026-11-22 20:25:45 | INFO     | __main__ | Evaluating XGBoost ...
+2026-11-22 20:25:47 | INFO     | __main__ |   XGBoost              AUC=0.9297 ± 0.0078  P=0.7918  R=0.7439  F1=0.7667
+2026-11-22 20:25:47 | INFO     | __main__ | Evaluating PyTorchMLP ...
+2026-11-22 20:26:10 | INFO     | __main__ |   PyTorchMLP           AUC=0.9418 ± 0.0074  P=0.8005  R=0.7981  F1=0.7989
+2026-11-22 20:26:10 | INFO     | __main__ | Evaluating TensorFlowMLP ...
+2026-11-22 20:26:32 | INFO     | __main__ |   TensorFlowMLP        AUC=0.9414 ± 0.0071  P=0.7990  R=0.7950  F1=0.7966
+2026-11-22 20:46:14 | INFO     | __main__ | Loading dataset from C:\Users\rajki\OneDrive\Desktop\Projects\loan_guard_enterprise_ai\data\loan_dataset.csv
+2026-11-22 20:46:14 | INFO     | __main__ | Training PyTorchMLP — train=2560, val=640, test=800
+2026-11-22 20:46:17 | INFO     | __main__ | MLP weights saved → C:\Users\rajki\OneDrive\Desktop\Projects\loan_guard_enterprise_ai\src\ml\artifacts\mlp.pt
+2026-11-22 20:46:17 | INFO     | __main__ | Scaler saved → C:\Users\rajki\OneDrive\Desktop\Projects\loan_guard_enterprise_ai\src\ml\artifacts\mlp_scaler.joblib
+2026-11-22 20:46:17 | INFO     | __main__ | Metrics: AUC=0.9375 F1=0.7899
+2026-11-22 20:48:30 | INFO     | src.database.db | Database initialized at data\loanguard.db
+2026-11-22 20:51:46 | INFO     | src.api.cibil_api | Mock CIBIL report generated for PAN=GKBPR2341Y: score=608
+2026-11-22 20:51:46 | INFO     | src.ml.model | Loaded MLP + scaler from C:\Users\rajki\OneDrive\Desktop\Projects\loan_guard_enterprise_ai\src\ml\artifacts
+2026-11-22 20:51:46 | INFO     | src.ml.model | Risk prediction: probability=0.4159 category=High
+2026-11-22 20:51:46 | INFO     | src.decision.rule_engine | Decision: Rejected (hard reject) reasons=['CIBIL score (608) is below the minimum threshold of 650.', 'ML model classifies this applicant as High default risk.']
+2026-11-22 20:51:46 | INFO     | src.database.db | Saved application id=22 decision=Rejected
+2026-11-22 20:51:49 | INFO     | src.voice.tts | Synthesized 136 chars of speech in lang=en
+2026-11-22 20:52:31 | INFO     | src.api.cibil_api | Mock CIBIL report generated for PAN=GKBPR2341Y: score=608
+2026-11-22 20:52:31 | INFO     | src.ml.model | Risk prediction: probability=0.2049 category=Medium
+2026-11-22 20:52:31 | INFO     | src.decision.rule_engine | Decision: Approved via Rule 2 — Standard, loan=480000.00 rate=0.110
+2026-11-22 20:52:31 | INFO     | src.database.db | Saved application id=23 decision=Approved
+2026-11-22 20:52:33 | INFO     | src.api.cibil_api | Mock CIBIL report generated for PAN=GKBPR2341Y: score=608
+2026-11-22 20:52:33 | INFO     | src.ml.model | Risk prediction: probability=0.2049 category=Medium
+2026-11-22 20:52:33 | INFO     | src.decision.rule_engine | Decision: Approved via Rule 2 — Standard, loan=480000.00 rate=0.110
+2026-11-22 20:52:33 | INFO     | src.database.db | Saved application id=24 decision=Approved
+2026-11-22 20:52:33 | INFO     | src.voice.tts | Synthesized 124 chars of speech in lang=en
+2026-11-22 20:52:36 | INFO     | src.voice.tts | Synthesized 124 chars of speech in lang=en
