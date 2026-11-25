@@ -256,3 +256,11 @@
 2026-11-22 20:52:33 | INFO     | src.database.db | Saved application id=24 decision=Approved
 2026-11-22 20:52:33 | INFO     | src.voice.tts | Synthesized 124 chars of speech in lang=en
 2026-11-22 20:52:36 | INFO     | src.voice.tts | Synthesized 124 chars of speech in lang=en
+2026-11-24 14:17:30 | INFO     | src.ml.model | Loaded MLP + scaler from C:\Users\rajki\OneDrive\Desktop\Projects\loan_guard_enterprise_ai\src\ml\artifacts
+2026-11-24 14:17:30 | INFO     | src.ml.model | Risk prediction: probability=0.2237 category=Medium
+2026-11-24 14:18:57 | INFO     | src.ml.model | Loaded MLP + scaler from C:\Users\rajki\OneDrive\Desktop\Projects\loan_guard_enterprise_ai\src\ml\artifacts
+2026-11-24 14:18:57 | INFO     | src.ml.model | Risk prediction: probability=0.2237 category=Medium
+2026-11-24 14:22:49 | INFO     | src.ml.model | Loaded MLP + scaler from C:\Users\rajki\OneDrive\Desktop\Projects\loan_guard_enterprise_ai\src\ml\artifacts
+2026-11-24 14:22:49 | INFO     | src.ml.model | Risk prediction: probability=0.2237 category=Medium
+2026-11-24 14:22:49 | INFO     | src.decision.rule_engine | Decision: Approved with Review via Rule 3 — Conditional, loan=333333.33 rate=0.135
+2026-11-24 18:44:03 | INFO     | src.database.db | Database initialized at data\loanguard.db

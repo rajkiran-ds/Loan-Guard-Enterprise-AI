@@ -1,0 +1,13 @@
+services:
+  loanguard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
+      - ./src/ml/artifacts:/app/src/ml/artifacts
+    restart: unless-stopped

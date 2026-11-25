@@ -1,0 +1,28 @@
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments (Docker does not need your local venv)
+venv/
+.venv/
+env/
+ENV/
+
+# App specific local data
+.env
+data/
+uploads/
+reports/
+logs/
+mlruns/
+mlflow.db
+*.log
+
+# Version control and IDE (Huge folders that slow down Docker)
+.git/
+.github/
+.vscode/
+.idea/
+.DS_Store

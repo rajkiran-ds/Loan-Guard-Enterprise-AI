@@ -61,6 +61,3 @@ gTTS==2.5.3
 # `pip install openai-whisper` separately later if you want the fallback.
 
 # --- Experiment tracking + Deep Learning (for experimentation.py) ---
-mlflow>=2.16.0
-torch>=2.4.0
-tensorflow>=2.16.0
